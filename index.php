@@ -10,7 +10,7 @@ if(isset($_GET['code']) && !empty($_GET['code'])){
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
         "http://www.w3.org/TR/html4/strict.dtd">
 <head>
-<title>Simple URL's @ stephentvedt.com</title>
+<title>Simple URL's @ tvdt.us</title>
 
 <link href="style.css" rel="stylesheet" type="text/css">
 
@@ -54,7 +54,7 @@ function getUrl(){
 <body>
 
 <div id="container">
-  <h1>Simple URL's @ stephentvedt.com</h1>
+  <h1>Simple URL's @ tvdt.us</h1>
   <p>Go ahead, enter a long URL and have it shortened.</p>
   <p><input type="text" name="url" id="url" size="60" autofocus placeholder="http://" /> <input id="button" type="button" value="Shorten" /></p>
 

@@ -3,7 +3,7 @@
 include 'db.inc.php';
 
 function is_min($url){
-	return (preg_match("/stephentvedt\.com\/u\//i", $url)) ? true : false;	
+	return (preg_match("/tvdt\.us/i", $url)) ? true : false;	
 }
 
 function gen_code(){

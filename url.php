@@ -11,7 +11,7 @@ if (isset($_POST['url'])){
 		echo 'error_is_min';
 	}else {
 		while(!code_exists($code = gen_code())){
-			echo 'http://stephentvedt.com/u/'.shorten($url, $code);
+			echo 'http://tvdt.us/'.shorten($url, $code);
 			break 1;
 		}	
 	}
