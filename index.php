@@ -7,9 +7,10 @@ if(isset($_GET['code']) && !empty($_GET['code'])){
 	die();
 }
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-        "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
+<meta charset="UTF-8">
 <title>Simple URL's @ tvdt.us</title>
 
 <link href="style.css" rel="stylesheet" type="text/css">
@@ -28,7 +29,7 @@ $(document).ready(function() {
 });
 function getUrl(){
 	var url = $('#url').val();
-	if(!(new RegExp('http://')).test(url)){
+	if(!(new RegExp('^(http|https)://')).test(url)){
 		url = 'http://' + url;
 	}
 	$.post('url.php', {url:url}, function(data){
