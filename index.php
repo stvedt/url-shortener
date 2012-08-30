@@ -57,8 +57,8 @@ function getUrl(){
 <body>
 
 <div id="container">
-  <h1>Simple URL's @ tvdt.us</h1>
-  <p>Go ahead, enter a long URL and have it shortened.</p>
+  <h1><img src="tvdt.png" align="tvdt.us logo"/></h1>
+  <p>Enter an uncool link and make it hip!</p>
   <p><input type="text" name="url" id="url" size="60" autofocus placeholder="http://" required /> <input id="button" type="button" value="Shorten" /></p>
 
   <div id="message"><p>&nbsp;</p></div>
