@@ -2,8 +2,8 @@ html{
 	font-size:18px;
 }
 body {
-  font-size: 1em;
-  font-family: helvetica;
+  font-size: 1.5em;
+  font-family: "futura-pt";
 }
 
 a {
@@ -19,4 +19,9 @@ a {
 
 h1 {
   font-size: 2em;
+  margin:0;
+}
+
+p{
+	margin:0;
 }

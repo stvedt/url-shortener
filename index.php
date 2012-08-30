@@ -13,6 +13,8 @@ if(isset($_GET['code']) && !empty($_GET['code'])){
 <title>Simple URL's @ tvdt.us</title>
 
 <link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="//use.typekit.net/uzk6kjm.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 <script type="text/javascript">
