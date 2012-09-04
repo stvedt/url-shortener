@@ -1,27 +1,26 @@
-html{
+html {
 	font-size:18px;
 }
 body {
-  font-size: 1.5em;
-  font-family: "futura-pt";
+	font-size: 1.5em;
+	font-family: "futura-pt";
 }
-
 a {
-  color: #777;
-  text-decoration: underlined;
+	color: #777;
+	text-decoration: underlined;
 }
-
 #container {
-  width: 90%;
-  margin:0px auto;
-  text-align: center;
+	width: 90%;
+	margin:0px auto;
+	text-align: center;
 }
-
 h1 {
-  font-size: 2em;
-  margin:0;
-}
-
-p{
+	font-size: 2em;
 	margin:0;
+}
+p {
+	margin:0;
+}
+.copyright {
+	font-size:1em;
 }

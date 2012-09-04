@@ -11,7 +11,7 @@ if(isset($_GET['code']) && !empty($_GET['code'])){
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
-<title>Simple URL's @ tvdt.us</title>
+<title>Tvdt.us - Clean, Short, URLs</title>
 
 <link href="style.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="//use.typekit.net/uzk6kjm.js"></script>
@@ -65,7 +65,7 @@ function getUrl(){
   <p><input type="text" name="url" id="url" size="60" autofocus placeholder="http://" required /> <input id="button" type="button" value="Shorten" /></p>
 
   <div id="message"><p>&nbsp;</p></div>
-
+	<p class="copyright">Brought to you by: <a href="http://www.stephentvedt.com">Stephen Tvedt</a></p>
 </div>
 
 </body>
