@@ -20,8 +20,7 @@ function code_exists($code){
 function shorten($url, $code){
 	$url = mysql_real_escape_string($url);//security against injection
 	$code = mysql_real_escape_string($code);
-	//mysql_query("INSERT INTO `urls`(`url_id`, `url`, `code`) VALUES ('','test','test')");
-	mysql_query("INSERT INTO `urls` VALUES ('','$url','$code','')");	
+	mysql_query("INSERT INTO `urls` VALUES ('','$url','$code','','')");	
 	return $code;
 }
 
