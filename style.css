@@ -1,26 +1,42 @@
-html {
-	font-size:18px;
-}
+
+html { font-size:18px; }
+
 body {
 	font-size: 1.5em;
 	font-family: "futura-pt";
 }
+
 a {
 	color: #777;
 	text-decoration: underlined;
 }
+
 #container {
 	width: 90%;
 	margin:0px auto;
 	text-align: center;
 }
+
 h1 {
 	font-size: 2em;
 	margin:0;
 }
-p {
-	margin:0;
-}
-.copyright {
-	font-size:1em;
+
+p { margin:0; }
+
+.copyright { font-size:1em; }
+
+#tip {
+	visibility:hidden;
+	width:200px;
+	font:sans-serif;
+	font-size:.5em;
+	color:#fff;
+	margin:5px auto 0px auto;
+	padding:5px 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.5);
+	-moz-border-radius: 5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
 }
