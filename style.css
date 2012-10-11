@@ -24,15 +24,24 @@ h1 {
 
 p { margin:0; }
 
-.copyright { font-size:1em; }
+#message{
+	font-size:.75em;
+}
 
-#tip {
-	visibility:hidden;
+.copyright { margin-top:5%;font-size:.5em; }
+
+#tip{
+	height:28px;
+	margin:10px auto 0px auto;
 	width:200px;
+}
+
+#tip p{
+	display:none;
+	
 	font:sans-serif;
 	font-size:.5em;
 	color:#fff;
-	margin:10px auto 0px auto;
 	padding:5px 10px;
 	background-color: rgba(0, 0, 0, 0.5);
 	background: rgba(0, 0, 0, 0.5);

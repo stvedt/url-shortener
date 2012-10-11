@@ -21,16 +21,31 @@ var opSys, tip;
 $(document).ready(function() {
     //Submit events
 	$('#button').click(getUrl);
-	$('#url').keypress(function(e) {
+	var url = $('#url');
+	tip = $('#tip p');
+	opSys = getOs();
+	
+	url.keypress(function(e) {
 		if(e.which == 13) {getUrl();}
 	});
 	
-	tip = $('#tip');
-	opSys = getOs();
+	url.blur( function(){
+		tip.fadeOut();	
+	});
+	url.focus( function(){
+		if (url.val().match(/tvdt.us/)){
+			tip.fadeIn();					
+			url.select();
+		}
+	}).mouseup(function(e){ e.preventDefault(); });
+	
+	
 	
 });
 function getUrl(){
 	var url = $('#url').val();
+	var urlBox = $('#url');
+	
 	if(!(new RegExp('^(http|https)://')).test(url)){
 		url = 'http://' + url;
 	}
@@ -50,12 +65,11 @@ function getUrl(){
 					message.html('Already Shortened');
 				break;			
 			default:
-				$('#url').val(data);
-				$('#url').select();
-				tip.html(opSys);
-				tip.css('visibility','visible');
+				urlBox.val(data);
 				message.html('Successfully Shortened URL');
-		}	
+		}
+		tip.html(opSys);
+		urlBox.select();
 	});
 }
 
@@ -70,10 +84,10 @@ function getOs(){
 	<h1><img src="tvdt.png" align="tvdt.us logo"/></h1>
 	<p>Enter an uncool link and make it hip!</p>
 	<p>
-		<input type="text" name="url" id="url" size="60" autofocus placeholder="http://" required />
+		<input type="url" name="url" id="url" size="60" autofocus placeholder="http://" required />
 		<input id="button" type="button" value="Shorten" />
 	</p>
-	<div id="tip">Press Ctrl + C to copy.</div>
+	<div id="tip"><p>Press Ctrl + C to copy.</p></div>
 	<div id="message">
 		<p>&nbsp;</p>
 	</div>
