@@ -1,28 +1,5 @@
-var opSys, tip;
-$(document).ready(function() {
-    //Submit events
-	$('#button').click(getUrl);
-	var url = $('#url');
-	tip = $('#tip p');
-	opSys = getOs();
-	
-	url.keypress(function(e) {
-		if(e.which == 13) {getUrl();}
-	});
-	
-	url.blur( function(){
-		tip.fadeOut();	
-	});
-	url.focus( function(){
-		if (url.val().match(/tvdt.us/)){
-			tip.fadeIn();					
-			url.select();
-		}
-	}).mouseup(function(e){ e.preventDefault(); });
-	
-	
-	
-});
+//Function Declarations
+
 function getUrl(){
 	var url = $('#url').val();
 	var urlBox = $('#url');
@@ -31,7 +8,7 @@ function getUrl(){
 		url = 'http://' + url;
 	}
 	$.post('url.php', {url:url}, function(data){
-	
+		
 		var message = $('#message p');
 		
 		switch (data)
@@ -58,3 +35,31 @@ function getOs(){
 	var os =  navigator.platform;
 	return (os.match(/Mac/)) ? '⌘ + C to copy' : 'Ctrl + C to copy';
 }
+
+//Start Processing
+
+var opSys, tip;
+$(document).ready(function() {
+    //Submit events
+	$('#button').click(getUrl);
+	var url = $('#url');
+	tip = $('#tip p');
+	opSys = getOs();
+	
+	url.keypress(function(e) {
+		if(e.which == 13) {getUrl();}
+	});
+	
+	url.blur( function(){
+		tip.fadeOut();	
+	});
+	url.focus( function(){
+		if (url.val().match(/tvdt.us/)){
+			tip.fadeIn();					
+			url.select();
+		}
+	}).mouseup(function(e){ e.preventDefault(); });
+	
+	
+	
+});
