@@ -20,7 +20,7 @@ if(isset($_GET['code']) && !empty($_GET['code'])){
 </head>
 <body>
 <div id="container">
-	<h1><img src="tvdt.png" align="images/tvdt.us logo"/></h1>
+	<h1><img src="images/tvdt.png" alt="tvdt.us logo"/></h1>
 	<p>Enter an uncool link and make it hip!</p>
 	<p>
 		<input type="url" name="url" id="url" size="60" autofocus placeholder="http://" required />
